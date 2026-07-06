@@ -14,11 +14,13 @@ python -m venv .venv
 
 # Activate Environment (Windows PowerShell)
 .\.venv\Scripts\Activate.ps1
+
 2. Dependency Management
 Install the foundational testing framework and system performance monitoring hooks:
 
 Bash
 pip install pytest psutil
+
 3. Running the Automated Verification Engine
 Execute the pytest test matrix from the root folder to verify internal pipeline safety bounds and output accuracy:
 
