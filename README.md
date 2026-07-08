@@ -1,5 +1,33 @@
 # NexaOps_Sub_Projects
-Side Projects for NexaOps-AI
+
+A lightweight, high-performance edge system telemetry monitoring engine built using Test-Driven Development (TDD) principles. This module hooks directly into core hardware abstraction layers to deliver fast, optimized telemetry logging and minified data handoffs.
+
+---
+
+ 🚀 Installation & Local Execution
+1. Environment Configuration
+Clone the repository, initialize your isolated python virtual environment, and activate it:
+
+Bash
+# Initialize Environment
+python -m venv .venv
+
+# Activate Environment (Windows PowerShell)
+.\.venv\Scripts\Activate.ps1
+2. Dependency Management
+Install the foundational testing framework and system performance monitoring hooks:
+
+Bash
+pip install pytest psutil
+3. Running the Automated Verification Engine
+Execute the pytest test matrix from the root folder to verify internal pipeline safety bounds and output accuracy:
+
+Bash
+pytest -v
+
+## 🗺️ System Architecture
+
+The following diagram maps out the multi-layered tracking pipeline, from raw operating system telemetry ingestion to localized log appending and automation payload generation:
 
 ```mermaid
 graph TD
@@ -20,7 +48,7 @@ graph TD
 
     %% System Boundaries
     subgraph System Boundary Lines [3. Target Output Deliverables]
-        C1[sysmon.log File]
+        C1[SysMon.log File]
         C2[Minified JSON Payload]
     end
 
@@ -32,5 +60,9 @@ graph TD
     style Data Ingestion Point fill:#1f1f1f,stroke:#333,stroke-width:2px;
     style Transformation Logic fill:#111,stroke:#007acc,stroke-width:2px;
     style System Boundary Lines fill:#1f1f1f,stroke:#333,stroke-width:2px;
-    ``` 
-    
+
+
+   
+
+
+
